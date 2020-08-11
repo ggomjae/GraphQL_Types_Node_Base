@@ -1,0 +1,51 @@
+{
+  "name": "graphql_types_node_base",
+  "version": "1.0.0",
+  "description": "sori sori back server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=dev && nodemon './src/server.ts'  --exec 'ts-node' -e ts,graphql",
+    "start": "export NODE_ENV=prod && node ./build/server.ts",
+    "build": "cross-env NODE_ENV=prod && tsc"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": "2500"
+  },
+  "repository": "https://github.com/LUYOES/GraphQL_Types_Node_Base.git",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LUYOES/Sori_Sori_End/issues"
+  },
+  "homepage": "https://github.com/LUYOES/Sori_Sori_End#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.7",
+    "@types/dotenv": "^8.2.0",
+    "apollo-server-express": "^2.16.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/express": "^4.17.7",
+    "@types/graphql": "^14.5.0",
+    "@types/graphql-depth-limit": "^1.1.2",
+    "@types/node": "^14.0.27",
+    "@types/validator": "^13.1.0",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-import": "^1.0.2",
+    "graphql-import-node": "0.0.4",
+    "typescript": "^3.9.7"
+  }
+}
